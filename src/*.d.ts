@@ -1,9 +1,9 @@
 declare module "*.jpeg" {
-  const value: number;
+  const value: string;
   export = value;
 }
 
 declare module "*.jpg" {
-  const value: number;
+  const value: string;
   export = value;
 }
