@@ -5,21 +5,32 @@
     <title>Template</title>
   <script defer src="index.js"></script></head>
   <body>
-    <aside class="toolbar">
-      <div>
-        <p>Change Maps</p>
-      </div>
-      <div class="utility"></div>
-    </aside>
-    <main class="map-container">
-      <img id="map" />
+    <main class="main-content">
+      <aside class="sidebar">
+        <div>
+          <p>Change Maps</p>
+        </div>
+        <div class="utility">
+          <button class="utility-button">Breach Charge</button>
+          <button class="utility-button">Smoke</button>
+          <button class="utility-button">Drone</button>
+          <button class="utility-button">Emp</button>
+          <button class="utility-button">Hard Breach</button>
+          <button class="utility-button">Stun Grenade</button>
+          <button class="utility-button">Grenade</button>
+          <button class="utility-button">Deployable Shield</button>
+        </div>
+        <div class="buttons">
+          <button class="save-button">Save</button>
+          <button class="clear-button">Clear</button>
+        </div>
+      </aside>
+      <section class="map-container">
+        <img id="map" />
+      </section>
     </main>
-    <footer>
-      <div class="buttons">
-        <button>Save</button>
-        <button>Clear</button>
-      </div>
+    <section>
       <div class="operator-list"></div>
-    </footer>
+    </section>
   </body>
 </html>

@@ -1,5 +1,56 @@
-* {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Global Styles */
+button {
+  border: none;
+  border-radius: 10px;
+  width: min-content;
+  padding: 6px;
+}
+/* Main Content Styles */
+.main-content {
+}
+
+.map-container {
+  position: relative;
+  width: 70%;
+}
+
+.map-container #map {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #343434;
+  color: white;
+  padding: 12px;
+}
+
+.utility {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
+}
+.utility-button {
+  margin: auto;
+  border: none;
+  width: 75px;
+  height: 75px;
 }
