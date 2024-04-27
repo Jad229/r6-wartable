@@ -1,6 +1,7 @@
 :root {
   --sidebar-width: 225px;
-  --primary-bg: #343434;
+  --primary-bg: #202020;
+  --secondary-bg: #343434;
   --primary-fg: #f3f3f3;
 }
 *,
@@ -24,7 +25,7 @@ main {
   justify-content: center;
   padding-block: 24px;
   padding-left: var(--sidebar-width);
-  background-color: #202020;
+  background-color: var(--primary-bg);
   height: 100%;
 }
 
@@ -50,7 +51,7 @@ main {
   left: 0;
   width: var(--sidebar-width);
   height: 100%;
-  background-color: var(--primary-bg);
+  background-color: var(--secondary-bg);
   color: var(--primary-fg);
   padding: 12px;
 }
@@ -65,4 +66,18 @@ main {
   border: none;
   width: 75px;
   height: 75px;
+}
+
+/* Operator List Styles */
+.operator-list {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70px;
+  width: 100%;
+  background-color: var(--primary-bg);
+  padding-left: var(--sidebar-width);
+}
+
+.operator:hover {
+  background-color: #404040;
 }
