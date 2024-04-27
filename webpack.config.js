@@ -4,12 +4,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: "./src/js/index.ts",
-  output: {
-    filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
-  },
   module: {
     rules: [
+      {
+        test: /\.ts$/,
+        use: "ts-loader",
+        include: [path.resolve(__dirname, "src")],
+        exclude: /node_modules/,
+      },
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
@@ -19,6 +21,13 @@ module.exports = {
         type: "asset/resource",
       },
     ],
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+  },
+  output: {
+    filename: "index.js",
+    path: path.resolve(__dirname, "dist"),
   },
   devtool: "inline-source-map",
   plugins: [
