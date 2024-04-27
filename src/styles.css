@@ -20,12 +20,17 @@ button {
 }
 /* Main Content Styles */
 main {
+  display: flex;
+  justify-content: center;
+  padding-block: 24px;
   padding-left: var(--sidebar-width);
+  background-color: #202020;
+  height: 100%;
 }
 
 .map-container {
   position: relative;
-  width: 70%;
+  width: 60%;
 }
 
 .map-container #map {
