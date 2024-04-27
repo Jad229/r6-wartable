@@ -78,6 +78,11 @@ main {
   padding-left: var(--sidebar-width);
 }
 
+.operator {
+  transition: all 0.3s ease;
+}
 .operator:hover {
   background-color: #404040;
+  cursor: pointer;
+  transform: scale(0.9);
 }
